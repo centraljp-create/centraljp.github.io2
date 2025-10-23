@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>歌動ラボ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="ChewingSchool.css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav>
+  <a href="https://docs.google.com/forms/●●●" class="contact-link">お問い合わせ</a>
+    <div class="menu-icon" id="menuIcon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- メニュー -->
+  <div class="menu" id="menu" >
+    <a href="ChewingSchool.html#">トップ</a>
+    <a href="ChewingSchool.html#NEWS">NEWS</a>
+    <a href="ChewingSchool.html#MOVIE">MOVIE</a>
+    <a href="ChewingSchool.html#依頼">依頼</a>
+    <a href="よくある質問.html">Q＆Aよくある質問</a>
+    <a href="#contact">担当者紹介</a>
+  </div>
+  
+  <div class="overlay" id="overlay"></div>
+
+
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const menu = document.getElementById('menu');
+
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+  </style>
+</head>
+<body>
+
+
+
+
+  <!-- メイン画像切り替え -->
+  <div class="main">
+    <div class="container"style="width: 100%;">
+      <img class="image" src="Che.jpg" />
+      <img class="image" src="作曲依頼.png" />
+      <img class="image" src="MIX.png" />
+    </div>
+  </div>
+
+<div class="slider-container">
+  <div class="arrow left">&#8249;</div>
+  <div class="slide-track" id="slideTrack">
+    <!-- クローン付き順番 -->
+    <div class="slide"><img src="555.png" alt="5"></div>
+    <div class="slide"><img src="che.jpg" alt="1"></div>
+    <div class="slide"><img src="作曲依頼.png" alt="2"></div>
+    <div class="slide"><img src="MIX.png" alt="3"></div>
+    <div class="slide"><img src="444.png" alt="4"></div>
+    <div class="slide"><img src="555.png" alt="5"></div>
+    <div class="slide"><img src="che.jpg" alt="1"></div> <!-- ← クローンで自然ループ -->
+    <div class="slide"><img src="作曲依頼.png" alt="2"></div>
+  </div>
+  <div class="arrow right">&#8250;</div>
+</div>
+
+<script>
+  const track = document.getElementById("slideTrack");
+  const slides = track.children;
+  const slideCount = slides.length;
+  const prevBtn = document.querySelector(".arrow.left");
+  const nextBtn = document.querySelector(".arrow.right");
+
+  const slideWidth = slides[0].offsetWidth;
+  let currentIndex = 1;
+
+  // 初期位置セット
+  function goToIndex(index, transition = true) {
+    if (!transition) {
+      track.style.transition = 'none';
+    } else {
+      track.style.transition = 'transform 0.5s ease-in-out';
+    }
+    track.style.transform = `translateX(-${slideWidth * (index - 1)}px)`;
+
+    // active クラスの管理
+    Array.from(slides).forEach(s => s.classList.remove("active"));
+    slides[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentIndex++;
+    goToIndex(currentIndex);
+
+    // 最後のクローンまで行ったら即戻る
+    if (currentIndex === slideCount - 2) {
+      setTimeout(() => {
+        currentIndex = 1;
+        goToIndex(currentIndex, false); // トランジションなしで巻き戻す
+      }, 500);
+    }
+  }
+
+  function prevSlide() {
+    currentIndex--;
+    goToIndex(currentIndex);
+
+    if (currentIndex === 0) {
+      setTimeout(() => {
+        currentIndex = slideCount - 3;
+        goToIndex(currentIndex, false);
+      }, 500);
+    }
+  }
+
+  nextBtn.addEventListener("click", nextSlide);
+  prevBtn.addEventListener("click", prevSlide);
+
+  window.addEventListener("load", () => {
+    goToIndex(currentIndex, false);
+  });
+  
+  
+</script>
+  <!-- トピック -->
+  <h2 style="text-align:center">TOPIC</h2>
+  <hr>
+  <h4 style="text-align:center">
+    相談から可能！あなたのご希望に完全に添えるよう徹底的に再現します。
+  </h4>
+  <hr>
+
+  <!-- ニュース -->
+  <h3 id="NEWS">NEWS</h3>
+  <hr>
+  <h5>2024.12.31</h5>
+  <p>12月31日(火)より「チューイングスクール」リリース！</p>
+  <hr>
+  <h4><a href="#">すべて表示する ▾</a></h4>
+
+  <!-- Twitter -->
+  <a class="twitter-timeline"
+     data-height="600"
+     href="https://twitter.com/chewingschool?ref_src=twsrc%5Etfw">
+     Tweets by @chewingschool
+  </a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <!-- MOVIE -->
+  <h3 id="MOVIE">MOVIE</h3>
+  <a href="https://www.youtube.com/@ChewingSchool_OFFICIAL">ChewingSchool Youtube CHANNEL</a>
+  <hr>
+  <div class="movies-container">
+    <div class="movie">
+      <a href="https://youtu.be/zD5NjD8Ea28?si=zltlvXFrXa5qg0wv">
+        <img class="thumb js-movie" src="111.png" alt="Youtubeサムネイル" >
+        <p>ChewingSchool「チューイングスクール」</p>
+      </a>
+    </div>
+
+    <div class="movie">
+      <a href="https://youtu.be/zD5NjD8Ea28?si=zltlvXFrXa5qg0wv">
+        <img class="thumb js-movie" src="111.png" alt="Youtubeサムネイル" >
+        <p>ChewingSchool「チューイングスクール」</p>
+      </a>
+    </div>
+  </div>
+  
+  <!--依頼-->
+ 
+  <h3 id="依頼">依頼</h3>
+  <hr>
+   <a href="作曲価格.html">
+        <img src="作曲依頼.png" alt="Parrots"style="width: 100%; height: auto; max-width: 600px;">
+    </a>
+     <a href="MIX価格.html">
+        <img src="MIX.png" alt="Parrots" style="width: 100%; height: auto; max-width: 600px;">
+    </a>
+    <br>
+  <div style="background: pink;">
+  <br>
+  <div >
+<img src="CWS1.png" class="CWS" style="text-align:left">
+</div>
+<ul class="snsbtniti">
+
+<li>
+<a href="https://x.com/ChewingSchool" class="flowbtn2 my_x2">
+<i class="fa-brands fa-x-twitter"></i>
+<div>エックス</div>
+</a>
+</li>
+
+<li>
+<a href="インスタのプロフィールURL" class="flowbtn2 my_instagram2">
+<i class="fa-brands fa-instagram"></i>
+<div>Instagram</div>
+</a>
+</li>
+
+<li>
+<a href="YouTubeのチャンネルURL" class="flowbtn2 my_youtube2">
+<i class="fab fa-youtube"></i>
+<div>YouTube</div>
+</a>
+</li>
+
+<li><a href="TikTokプロフィールURL" class="flowbtn2 my_tiktok2">
+<i class="fa-brands fa-tiktok"></i>
+<div>TikTok</div>
+</a>
+</li>
+
+</ul>
+  <p style="color:white;" class="special-margin">Chewing Scoolでは、作曲・仮歌・MIXなどの音楽制作を通じて、個人から法人まで幅広いお客様の音楽活動をサポートしています。「はじめてで不安…」「アイデアだけあるけど形にできない…」そんな学生の方や初心者の方にも安心してご利用いただけるよう、シンプルなご依頼からフルサポートまで、丁寧にご対応します。
+オリジナル曲を作るうえでの不安をなくし、「お客様と一緒に曲を作る」ことをモットーに、気軽に相談できるパートナーでありたいと考えています。
+まずはお気軽にご相談ください。</p>
+
+ </div>
+<!-- スライダー部分 -->
+
+</body>
+</html>
