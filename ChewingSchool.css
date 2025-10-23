@@ -1,0 +1,383 @@
+ <style>
+    /* === 基本スタイル === */
+    body {
+      margin: 20px;
+      font-family: "Hannari", sans-serif;
+    }
+
+    h1 {
+      text-shadow: 5px 5px 6px #666b70;
+      font-size: 35px;
+      color: #000;
+    }
+
+    h2 {
+      background-image: linear-gradient(pink, white);
+      padding: 10px;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      color: pink;
+      font-size: 40px;
+      font-family: "Times New Roman", serif;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+
+    h5 {
+      line-height: 0px;
+      color: gray;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    /* === スライダー（中央拡大） === */
+    .footer-slider {
+      background: #f8cdd3;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .slide-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      flex: 0 0 33.333%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide img {
+      max-width: 80%;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      transform: scale(0.8);
+      opacity: 0.6;
+    }
+
+    .slide.active img {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    /* === 画像アニメーション === */
+    .container {
+      position: relative;
+      width: 100px;
+      max-width: 700px;
+      height: 400px;
+      margin: 0 auto;
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      max-width: 700px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: change-img-anim 30s infinite;
+    }
+
+    .image:nth-of-type(1) {
+      animation: change-img-anim-first 30s infinite;
+      animation-delay: 0s;
+    }
+
+    .image:nth-of-type(2) {
+      animation-delay: 10s;
+    }
+
+    .image:nth-of-type(3) {
+      animation-delay: 20s;
+    }
+
+    @keyframes change-img-anim-first {
+      0% { opacity: 1; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    @keyframes change-img-anim {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    /* === 映画コンテンツ === */
+    .movies-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .movie {
+      width: 50%;
+      max-width: 400px;
+      height: 240px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+/* ナビバー全体 */
+    nav {
+      background-color: rgba(255,255,255,0.5);
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    /* ハンバーガーメニュー */
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 22px;
+      cursor: pointer;
+    }
+
+    .menu-icon div {
+      height: 4px;
+      background-color: black;
+      border-radius: 2px;
+    }
+
+    /* メニュー内容 */
+    .menu {
+      position: fixed;
+      top: 60px;
+      right: 0;
+      background-color: #ffffff;
+      width: 200px;
+      display: none;
+      flex-direction: column;
+      padding: 20px;
+      z-index: 999;
+    }
+
+    .menu a {
+      color: black;
+      text-decoration: none;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .menu.show {
+      display: flex;
+    }
+        .slider-container {
+     max-width: 100%;
+      width: 700px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slide-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      flex: 0 0 33.333%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide img {
+      width: 90%;
+      border-radius: 10px;
+      opacity: 0.6;
+      transition: transform 0.5s, opacity 0.5s;
+    }
+
+    .slide.active img {
+      transform: scale(1.1);
+      opacity: 1;
+      border: 3px solid pink;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      color: pink;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      cursor: pointer;
+      user-select: none;
+      padding: 5px 15px;
+      z-index: 10;
+    }
+
+    .arrow.left { left: 10px; }
+    .arrow.right { right: 10px; }
+    .overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 998;
+}
+
+.overlay.show {
+  display: block;
+}
+.special-margin{
+margin-left: 20px;
+margin-right: 20px;
+text-align: left;
+}
+/*アイコン*/
+/* ボタン全体の外枠指定 */
+.snsbtniti {
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+max-width: 350px;/* ボタンを設置する場所の最大横幅 */
+margin: 0 ;/* ボタンを左へ */
+}
+
+/* ulタグの内側余白なしと箇条書きの黒丸削除 */
+ul.snsbtniti {
+padding: 0!important;
+list-style-type: none!important;
+}
+
+/* ボタン同士の余白調整 */
+.snsbtniti li {
+flex: 0 0 25%; /* ボタン3つ並びへ */
+text-align: center!important;
+}
+
+/* ボタン全体 */
+.flowbtn2 {
+font-family: 'Noto Sans Japaneses', sans-serif; /* フォント指定 */
+position: relative;
+display: inline-block;
+width: 75px;/* 背景横幅 */
+height: 65px; /* 背景高さ */
+font-size: 30px;
+border-radius: 4px;
+transition: .5s;
+text-decoration: none;
+margin-bottom:10px;/* ボタン下の余白 */
+color: white; /* ← ★ ここが重要！ */
+}
+
+/* アイコンの位置を少し下げる */
+.flowbtn2 i {
+position: relative;
+top: 5px;
+}
+
+/* ボタン内テキスト調整 */
+.flowbtn2 div {
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 0;
+}
+
+/* マウスホバー時、ボタン内を白に指定 */
+.flowbtn2:hover {
+text-decoration: none;
+cursor: pointer;
+color: #fff;
+}
+/* インスタ・Amazonのアイコンを少し大きく */
+.flowbtn2 i.fa-brands.fa-instagram,.flowbtn2 i.fa-brands.fa-amazon {
+font-size: 35px;
+}
+
+border: solid 1px;;/* 枠線の指定 */
+}
+
+/* マウスホバー時、ボタン内を白に指定 */
+.flowbtn2:hover {
+text-decoration: none;
+cursor: pointer;
+color: #fff;
+
+border: solid 1px #000;/* 枠線カラー */
+background-color: #000;/* 背景カラー */
+}
+.CWS{
+width:150px;
+}
+
+@media (max-width: 768px) {
+  .movie {
+    max-width: 100px;
+  }
+}
+/* スマホサイズ以下のときだけ画像を小さく */
+@media (max-width: 767px) {
+  img {
+    width: 100%;    /* スマホでは小さめに */
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.contact-link {
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-link:hover {
+  background-color: pink;
+}
+  </style>
