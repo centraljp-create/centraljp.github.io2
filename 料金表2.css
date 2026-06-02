@@ -258,9 +258,21 @@ nav.navbar {
   align-items:flex-start;
 }
 
+.video-area video{
+  width:620px;
+}
+
+.icon img{
+  width:80px;
+}
+
 @media (max-width:768px){
   .video-area{
     flex-direction:column;
   }
+
+  .video-area video{
+    width:100%;
+    max-width:100%;
+  }
 }
-    </style>
