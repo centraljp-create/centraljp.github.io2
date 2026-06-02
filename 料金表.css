@@ -253,4 +253,14 @@ nav.navbar {
 .contact-link:hover {
   background-color: pink;
 }
+
+.video {
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  .video {
+    width: 50%;
+  }
+}
 /style>
