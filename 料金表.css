@@ -281,4 +281,15 @@ nav.navbar {
   }
 
 }
+.video-area{
+  display:flex !important;
+  gap:20px;
+  align-items:flex-start;
+}
+
+@media (max-width:768px){
+  .video-area{
+    flex-direction:column !important;
+  }
+}
 /style>
