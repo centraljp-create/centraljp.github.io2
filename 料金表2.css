@@ -249,12 +249,16 @@ nav.navbar {
 .contact-link:hover {
   background-color: pink;
 }
+
 .video-area{
   display:flex;
   gap:20px;
-  align-items:flex-start;
+  align-items:center;
 }
 
+.description{
+  align-self:flex-start;
+}
 .video-area video{
   width:620px;
 }
