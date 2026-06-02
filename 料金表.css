@@ -292,4 +292,10 @@ nav.navbar {
     flex-direction:column !important;
   }
 }
+.video-area{
+  display:flex !important;
+  gap:20px;
+  align-items:flex-start;
+  border:3px solid red;
+}
 /style>
