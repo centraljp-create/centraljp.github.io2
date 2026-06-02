@@ -254,13 +254,31 @@ nav.navbar {
   background-color: pink;
 }
 
-.video {
-  width: 60%;
+.video-area{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
 }
 
-@media (max-width: 600px) {
-  .video {
-    width: 50%;
+.video-area video{
+  width:620px;
+}
+
+.icon img{
+  width:80px;
+}
+
+/* スマホだけ */
+@media (max-width: 768px){
+
+  .video-area{
+    flex-direction:column;
   }
+
+  .video-area video{
+    width:100%;
+    max-width:100%;
+  }
+
 }
 /style>
