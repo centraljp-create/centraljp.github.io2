@@ -261,6 +261,7 @@ nav.navbar {
 
 .icon img{
   width:80px;
+         align-self:center;
 }
 
 @media (max-width:768px){
@@ -275,6 +276,5 @@ nav.navbar {
   }
    .icon img{
   width:80%;
-       align-self:center;
 }
 }
