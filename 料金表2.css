@@ -275,5 +275,7 @@ nav.navbar {
   }
    .icon img{
   width:80%;
+       align-self:center;
+}
 }
 }
