@@ -258,10 +258,11 @@ nav.navbar {
 .video-area video{
   width:620px;
 }
-
+.icon{
+  align-self:center;
+}
 .icon img{
   width:80px;
-         align-self:center;
 }
 
 @media (max-width:768px){
