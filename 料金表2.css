@@ -252,4 +252,15 @@ nav.navbar {
 .contact-link:hover {
   background-color: pink;
 }
+.video-area{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+@media (max-width:768px){
+  .video-area{
+    flex-direction:column;
+  }
+}
     </style>
