@@ -271,5 +271,10 @@ nav.navbar {
   .video-area video{
     width:100%;
     max-width:100%;
+     
   }
+   .icon img{
+  width:80%;
+      align-items: center;
+}
 }
