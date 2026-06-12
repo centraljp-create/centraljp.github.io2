@@ -352,14 +352,7 @@ width:150px;
     max-width: 100px;
   }
 }
-/* スマホサイズ以下のときだけ画像を小さく */
-@media (max-width: 767px) {
-  img {
-    width: 100%;    /* スマホでは小さめに */
-    margin: 0 auto;
-    display: block;
-  }
-}
+
 
 nav.navbar {
   display: flex;
