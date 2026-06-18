@@ -373,4 +373,13 @@ nav.navbar {
 .contact-link:hover {
   background-color: steelblue;
 }
+
+.movie-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-column p {
+  margin-top: 10px;
+}
   </style>
