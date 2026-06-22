@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>歌動ラボ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="料金表.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav>
+  <a href="https://docs.google.com/forms/●●●" class="contact-link">お問い合わせ</a>
+    <div class="menu-icon" id="menuIcon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- メニュー -->
+  <div class="menu" id="menu" >
+    <a href="index.html#">トップ</a>
+    <a href="index.html#NEWS">NEWS</a>
+    <a href="index.html#MOVIE">MOVIE</a>
+    <a href="index.html#依頼">依頼</a>
+    <a href="よくある質問.html">Q＆Aよくある質問</a>
+    <a href="#contact">担当者紹介</a>
+    </div>
+  
+  <div class="overlay" id="overlay"></div>
+
+
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const menu = document.getElementById('menu');
+
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+  </style>
+</head>
+ <div style="text-align:center;" class="container">
+      <img src="楽曲販売.jpg">
+<h1 style="text-align:center">楽曲販売</h1>
+<h1 style="font-size:20px; top: 70%;">現在依頼：受付中</h1>
+<a class="form" style="top: 80%;" href="https://docs.google.com/forms/d/e/1FAIpQLSfwkb4Dtz6bwdLOoPfv1gibXciLC9E9ZEtBXUEDCxmAEBoEyg/viewform?usp=dialog">依頼フォーム・ご相談はこちら</a>
+</div>
+<h2 style="text-align:center;">PRICE</h2>
+<p style="text-align:center;">料金表</p>
+<hr>
+<div class="price_warp">
+<table class="tbl_price">
+<tbody>
+<tr><th>instのみ</th></tr>
+<tr><td class="price_text">￥8,000</td></tr>
+<tr><td class="price_text_small">メロディーのみ</td></tr>
+</tbody>
+</div>
+<div class="price_warp">
+<table class="tbl_price">
+<tbody>
+<tr><th>inst＋歌詞付き(仮歌入り)</th></tr>
+<tr><td class="price_text">￥10,000</td></tr>
+<tr><td class="price_text_small">作曲+仮歌</td></tr>
+</tbody>
+</div>
+<div class="price_warp">
+<table class="tbl_price">
+<tbody>
+<tr><th>inst＋歌詞付き(仮歌入り)＋MIX</th></tr>
+<tr><td class="price_text">￥12,000</td></tr>
+<tr><td class="price_text_small">作曲+仮歌+MIX</td></tr>
+</tbody>
+</table>
+</div>
+<p style="background-color: #f5f5f5">※基本料金のため、ご要望内容によっては料金の変動はあります。</p>
+
+<script>
+function playMusic() {
+  const audio = document.getElementById("audioPlayer");
+  audio.currentTime = 10; // 10秒から
+  audio.play();
+}
+</script>
+      </a>
+    </div>
+
+    <div class="movie">
+      <a href="https://youtu.be/zD5NjD8Ea28?si=zltlvXFrXa5qg0wv">
+        <img class="thumb js-movie" src="音符1.png" alt="Youtubeサムネイル" >
+        <p>sample音源2</p>
+        <audio id="audioPlayer" controls>
+  <source src="compass.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playMusic() {
+  const audio = document.getElementById("audioPlayer");
+  audio.currentTime = 10; // 10秒から
+  audio.play();
+}
+</script>
+      </a>
+    </div>
+  </div>
+
+<div style="background: steelblue;">
+<br>
+<div >
+<img src="CWS1.png" class="CWS" style="text-align:left;">
+</div>
+<ul class="snsbtniti">
+
+<li>
+<a href="エックスのプロフィールURL" class="flowbtn2 my_x2">
+<i class="fa-brands fa-x-twitter"></i>
+<div>エックス</div>
+</a>
+</li>
+
+<li>
+<a href="インスタのプロフィールURL" class="flowbtn2 my_instagram2">
+<i class="fa-brands fa-instagram"></i>
+<div>Instagram</div>
+</a>
+</li>
+
+<li>
+<a href="YouTubeのチャンネルURL" class="flowbtn2 my_youtube2">
+<i class="fab fa-youtube"></i>
+<div>YouTube</div>
+</a>
+</li>
+
+<li><a href="TikTokプロフィールURL" class="flowbtn2 my_tiktok2">
+<i class="fa-brands fa-tiktok"></i>
+<div>TikTok</div>
+</a>
+</li>
+
+</ul>
+</div>
+
+</body>
