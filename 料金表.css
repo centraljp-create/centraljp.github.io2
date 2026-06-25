@@ -321,16 +321,7 @@ audio {
   height: 50px;
 }
 
-.audio-box {
-  display: flex;
-  align-items: center; /* 縦位置を中央に揃える */
-  gap: 20px;           /* バーと本文の間隔 */
-}
 
-.audio-box audio,
-.audio-box .plyr {
-  flex: 1;             /* プレイヤーが残り幅を使う */
-}
 
 .notice {
   padding: 0.5em 1em;
