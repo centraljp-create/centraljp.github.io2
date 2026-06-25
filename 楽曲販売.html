@@ -89,18 +89,20 @@ function playMusic() {
       </a>
     </div>
 
+   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+<script>
+const player = new Plyr('#player');
+</script>
     <div class="movie5">
     
         <p>sample音源2</p>
         <audio id="audioPlayer" controls>
   <source src="確認.mp3" type="audio/mpeg">
 </audio>
+  </div>
 
-      <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-
-<script>
-const player = new Plyr('#player');
-</script>
+  <div class="movie5">
         <audio id="player" controls>
     <source src="確認.mp3" type="audio/mpeg">
   </audio>
