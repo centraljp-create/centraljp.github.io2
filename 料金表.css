@@ -323,10 +323,5 @@ audio {
 
 
 
-.notice {
-  padding: 0.5em 1em;
-  border: 2px solid #ff8484;
-  border-radius: 10px;
-  white-space: nowrap; /* 本文が改行されないように */
-}
+
 </style>
