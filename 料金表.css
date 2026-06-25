@@ -322,6 +322,23 @@ audio {
 }
 
 
+.audio-box {
+  display: flex;
+   max-width: 70%;
+  align-items: center; /* 縦位置を中央に揃える */
+  gap: 20px;           /* バーと本文の間隔 */
+}
 
+.audio-box audio,
+.audio-box .plyr {
+  flex: 1;             /* プレイヤーが残り幅を使う */
+}
+
+.notice {
+  padding: 0.5em 1em;
+  border: 2px solid #ff8484;
+  border-radius: 10px;
+  white-space: nowrap; /* 本文が改行されないように */
+}
 
 </style>
