@@ -206,6 +206,22 @@ width:150px;
       flex-direction: column; 
       margin-right: 5%; /* 右に余白を持たせる */
     }
+
+
+.movie5{
+    text-align:center;
+    margin:40px auto;
+}
+
+#player{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+}
+
+:root{
+    --plyr-color-main: steelblue;
+}
 .movie img {
     width: 200px;    /* スマホでは小さめに */
   }    
