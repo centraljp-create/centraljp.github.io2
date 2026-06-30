@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Twitter Test</title>
+</head>
+<body>
+
+<a class="twitter-timeline"
+   href="https://twitter.com/utasuta_music"
+   data-height="600">
+Tweets by @utasuta_music
+</a>
+
+<script async src="https://platform.twitter.com/widgets.js"></script>
+
+</body>
+</html>
