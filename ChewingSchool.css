@@ -20,6 +20,58 @@ header {
   width: auto;
   display: block;
 }
+    nav {
+      background-color: rgba(255,255,255,0.5);
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    /* ハンバーガーメニュー */
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 22px;
+      cursor: pointer;
+    }
+
+    .menu-icon div {
+      height: 4px;
+      background-color: black;
+      border-radius: 2px;
+    }
+
+    /* メニュー内容 */
+    .menu {
+      position: fixed;
+      top: 60px;
+      right: 0;
+      background-color: #ffffff;
+      width: 200px;
+      display: none;
+      flex-direction: column;
+      padding: 20px;
+      z-index: 999;
+    }
+
+    .menu a {
+      color: black;
+      text-decoration: none;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .menu.show {
+      display: flex;
+    }
 
     h1 {
       text-shadow: 5px 5px 6px #666b70;
