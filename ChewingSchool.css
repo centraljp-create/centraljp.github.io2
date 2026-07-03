@@ -27,17 +27,12 @@
   width: 100px;
   display: block;
 }
-    nav {
 
-      padding: 10px 20px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      z-index: 1000;
-    }
+nav {
+  background: rgba(255,255,255,0.5);
+  display: inline-flex;
+  width: fit-content;
+}
 
     /* ハンバーガーメニュー */
     .menu-icon {
