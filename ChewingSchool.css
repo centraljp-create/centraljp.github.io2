@@ -5,6 +5,23 @@
       font-family: "Hannari", sans-serif;
     }
 
+header {
+  position: fixed;      /* 常に画面上部 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
     h1 {
       text-shadow: 5px 5px 6px #666b70;
       font-size: 35px;
