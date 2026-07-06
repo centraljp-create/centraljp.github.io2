@@ -4,6 +4,34 @@
       font-family: "Hannari", sans-serif;
     }
 
+header {
+  background-color: rgba(255,255,255,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 7%;
+  width: 7%;
+  display: block;
+}
+
+
+
 .container{
         position: relative;
         width:100%;
