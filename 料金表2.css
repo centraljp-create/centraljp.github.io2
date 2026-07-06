@@ -4,6 +4,32 @@
       font-family: "Hannari", sans-serif;
     }
 
+header {
+  background-color: rgba(255,255,255,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 10%;
+  width: 10%;
+  display: block;
+}
+
 .container{
         position: relative;
         width:100%;
@@ -45,18 +71,7 @@ font-size: 25px;
 }
 
 /* ナビバー全体 */
-    nav {
-      background-color: rgba(255,255,255,0.5);
-      padding: 10px 20px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      z-index: 1000;
-    }
+  
 
     /* ハンバーガーメニュー */
     .menu-icon {
