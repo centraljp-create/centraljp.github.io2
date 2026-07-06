@@ -73,17 +73,7 @@ font-size: 25px;
 }
 
 /* ナビバー全体 */
-    nav {
-      padding: 10px 20px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      z-index: 1000;
-    }
-
+ 
     /* ハンバーガーメニュー */
     .menu-icon {
       display: flex;
