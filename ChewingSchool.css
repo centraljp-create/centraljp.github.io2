@@ -26,9 +26,9 @@ nav {
   align-items: center;
 }
 
-.logo img {
-  height: 10%;
-  width: 10%;
+.logo {
+  height: 70px;
+  width: auto;
   display: block;
 }
 
