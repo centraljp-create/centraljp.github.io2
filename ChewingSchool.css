@@ -26,8 +26,8 @@ nav {
   align-items: center;
 }
 
-.logo {
-  height: 10px;
+.logo img {
+  height: 70px;
   width: auto;
   display: block;
 }
