@@ -498,7 +498,7 @@ height: 110px;
     margin:0 0 10px;
     color:steelblue;
 
-    font-size:18px;
+    font-size:15px;
     font-family:"Times New Roman", serif;
 
     display:-webkit-box;
@@ -508,7 +508,7 @@ height: 110px;
 }
 .campaign-description{
     margin:0;
-    font-size:13px;
+    font-size:8px;
     line-height:1.5;
     color:#666;
 
