@@ -68,6 +68,7 @@ line-height: 0.4;
 
 h3{
 font-size: 25px;
+   margin-bottom: 5px;
 }
 
 /* ナビバー全体 */
@@ -299,4 +300,3 @@ nav.navbar {
 }
 }
 
-.gyou{line-height:70%;}
