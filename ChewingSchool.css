@@ -442,8 +442,8 @@ nav.navbar {
     width:100%;
     max-width:720px;
     box-sizing:border-box;
-
-    padding:18px;
+height: 110px;
+    padding:0;
     margin:20px 0;
 
     background:#fff;
