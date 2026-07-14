@@ -506,17 +506,18 @@ height: 110px;
     -webkit-box-orient:vertical;
  line-hight: 1.4;
 }
-
 .campaign-description{
     margin:0;
-
+    font-size:13px;
+    line-height:1.5;
     color:#666;
-    line-height:1.6;
+
+    flex:1;                  /* 残りの高さを全部使う */
+    overflow:hidden;
 
     display:-webkit-box;
-    -webkit-line-clamp:2;
     -webkit-box-orient:vertical;
-    overflow:hidden;
+    -webkit-line-clamp:99;   /* 高さに収まるだけ表示 */
 }
 
 .campaign-arrow{
