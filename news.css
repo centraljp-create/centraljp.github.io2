@@ -32,6 +32,19 @@ nav {
   display: block;
 }
 
+.contact-link {
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-link:hover {
+  background-color: steelblue;
+}
+
 
     /* ハンバーガーメニュー */
     .menu-icon {
