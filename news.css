@@ -85,3 +85,7 @@ nav {
     .menu.show {
       display: flex;
     }
+
+main img{
+    height: 350px;
+    width: auto
