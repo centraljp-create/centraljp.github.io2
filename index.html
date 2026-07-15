@@ -155,7 +155,7 @@
 
   <div class="campaign-content">
 
-    <h5 style="margin-bottom: 7px;">2026.7.30</h5>
+    <h5 style="margin: 7px;">2026.7.30</h5>
 
     <h3 class="campaign-title">
       スタートキャンペーン開催！
@@ -171,47 +171,7 @@
   <div class="campaign-arrow">›</div>
 
 </a>
-  <script src="script.js"></script>
-  <script>
-const news = [
-  {
-    date: "2026.7.30",
-    title: "スタートキャンペーン開催！",
-    description: "期間限定でMIX料金が10%OFF！初めてご依頼いただく方も対象です。",
-    image: "スタートキャンペーン.jpg",
-    link: "campaign.html"
-  },
-  {
-    date: "2026.7.1",
-    title: "歌スタMix&MusicProduction オープン",
-    description: "歌スタのサービスを開始しました。",
-    image: "utasuta.png",
-    link: "open.html"
-  }
-];
-
-const newsList = document.getElementById("news-list");
-
-news.forEach(item => {
-  newsList.innerHTML += `
-    <a href="${item.link}" class="campaign-card">
-      <div class="campaign-image">
-        <img src="${item.image}" alt="${item.title}">
-      </div>
-
-      <div class="campaign-content">
-        <div class="campaign-date">${item.date}</div>
-
-        <h3 class="campaign-title">${item.title}</h3>
-
-        <p class="campaign-description">${item.description}</p>
-      </div>
-
-      <div class="campaign-arrow">›</div>
-    </a>
-  `;
-});
-</script>
+ 
   <h5>2026.7.1</h5>
 <p>「歌スタMix&MusicProduction」オープン</p>
 <details>
