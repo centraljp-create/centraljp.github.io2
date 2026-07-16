@@ -300,6 +300,8 @@ nav.navbar {
 }
 }
 .card1{
+   width: 620px;
+   max-width: 100%;
      margin: 0 auto;    /* カードを中央に配置 */
 }
 
