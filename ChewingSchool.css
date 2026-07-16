@@ -526,31 +526,4 @@ height: 110px;
     flex-shrink:0;
 }
 
-
-.card1{
-    width:320px;
-}
-
-.card1 video{
-    width:100%;
-    display:block;
-}
-
-.card1 h3,
-.card1 p{
-    text-align:left;
-    margin-top:10px;
-}
-
-@media (max-width:768px){
-    .movies-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .card1{
-        width:100%;
-        max-width:620px;
-    }
-}
 </style>
