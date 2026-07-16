@@ -1,4 +1,4 @@
-<style>
+style>
     /* === 基本スタイル === */
     body {
       margin: 20px;
@@ -85,8 +85,116 @@ nav {
     .menu.show {
       display: flex;
     }
+    
+/* 全体 */
 
- img{
-    height: 350px;
-    width: auto
- }
+body{
+
+  margin:0;
+  font-family: "Hannari", sans-serif;
+  background:#fff;
+  color:#333;
+
+}
+
+/* お知らせ全体 */
+
+.news-detail{
+
+  max-width:1100px;
+  margin:120px auto;
+  padding:0 20px;
+
+}
+
+/* タイトル */
+
+.news-title{
+
+  font-size:36px;
+  margin-bottom:10px;
+
+}
+
+/* 日付 */
+
+.news-date{
+
+  color:#888;
+  margin-bottom:50px;
+  font-size:14px;
+
+}
+
+/* 画像と文章 */
+
+.news-content{
+
+  display:flex;
+  gap:50px;
+  align-items:flex-start;
+
+}
+
+/* 左画像 */
+
+.news-image{
+
+  width:45%;
+
+}
+
+.news-image img{
+
+  width:100%;
+  display:block;
+  border-radius:10px;
+
+}
+
+/* 右文章 */
+
+.news-text{
+
+  width:55%;
+  line-height:2;
+  font-size:17px;
+
+}
+
+.news-text p{
+
+  margin-bottom:25px;
+
+}
+
+/* スマホ */
+
+@media(max-width:768px){
+
+.news-content{
+
+  flex-direction:column;
+
+}
+
+.news-image,
+.news-text{
+
+  width:100%;
+
+}
+
+.news-title{
+
+  font-size:28px;
+
+}
+
+.news-text{
+
+  font-size:16px;
+
+}
+
+}
