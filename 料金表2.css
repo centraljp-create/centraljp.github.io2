@@ -299,4 +299,17 @@ nav.navbar {
   width:80%;
 }
 }
+.card1{
+  width: 320px; /* 画像と同じ幅 */
+}
 
+.card1 img{
+  width: 100%;
+  display: block;
+}
+
+.card1 h3,
+.card1 p{
+  margin: 10px 0 0;
+  text-align: left;
+}
