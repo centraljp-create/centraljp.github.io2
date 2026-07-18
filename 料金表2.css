@@ -328,3 +328,15 @@ nav.navbar {
         max-width:620px;
     }
 }
+
+.payment-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.payment-logos img {
+  height: 28px;
+  width: auto;
+}
