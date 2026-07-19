@@ -242,7 +242,7 @@ width:150px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3vw;  /* スマホ向けサイズ */
-  color: white;
+  color: red;
   margin: 0;
 }
 
