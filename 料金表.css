@@ -356,5 +356,43 @@ audio {
   border-radius: 10px;
   white-space: nowrap; /* 本文が改行されないように */
 }
+.card1{
+    width:620px;
+}
 
+.card1 video{
+    width:620px;
+   max-width: 100%;
+    display:block;
+}
+
+.card1 h3,
+.card1 p{
+    text-align:left;
+    margin-top:10px;
+}
+
+@media (max-width:768px){
+    .movies-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card1{
+        width:100%;
+        max-width:620px;
+    }
+}
+
+.payment-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.payment-logos img {
+  height: 28px;
+  width: auto;
+}
 </style>
