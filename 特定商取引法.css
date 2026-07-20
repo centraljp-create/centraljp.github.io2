@@ -1,9 +1,10 @@
-style>
-    /* === 基本スタイル === */
-    body {
-      margin: 20px;
-      font-family: "Hannari", sans-serif;
-    }
+/* === 基本スタイル === */
+body {
+  margin: 0;
+  font-family: "Hannari", sans-serif;
+  background: #fff;
+  color: #333;
+}
 
 /* ヘッダー全体 */
 header {
@@ -12,11 +13,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 10px 20px;
   z-index: 1000;
 }
@@ -45,194 +44,102 @@ nav {
   background-color: steelblue;
 }
 
-
-    /* ハンバーガーメニュー */
-    .menu-icon {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 22px;
-      cursor: pointer;
-    }
-
-    .menu-icon div {
-      height: 4px;
-      background-color: black;
-      border-radius: 2px;
-    }
-
-    /* メニュー内容 */
-    .menu {
-      position: fixed;
-      top: 60px;
-      right: 0;
-      background-color: #ffffff;
-      width: 200px;
-      display: none;
-      flex-direction: column;
-      padding: 20px;
-      z-index: 999;
-    }
-
-    .menu a {
-      color: black;
-      text-decoration: none;
-      margin-bottom: 15px;
-      font-size: 18px;
-    }
-
-    .menu.show {
-      display: flex;
-    }
-    
-/* 全体 */
-
-body{
-
-  margin:0;
-  font-family: "Hannari", sans-serif;
-  background:#fff;
-  color:#333;
-
+/* ハンバーガーメニュー */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
 }
 
-/* お知らせ全体 */
-
-.news-detail{
-
-  max-width:1100px;
-  margin:120px auto;
-  padding:0 20px;
-
+.menu-icon div {
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
 }
 
-/* タイトル */
-
-.news-title{
-
-  font-size:36px;
-  margin-bottom:10px;
-
+/* メニュー内容 */
+.menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: #ffffff;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 999;
 }
 
-/* 日付 */
-
-.news-date{
-
-  color:#888;
-  margin-bottom:50px;
-  font-size:14px;
-
+.menu a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 
-/* 画像と文章 */
-
-.news-content{
-
-  display:flex;
-  gap:50px;
-  align-items:flex-start;
-
+.menu.show {
+  display: flex;
 }
 
-/* 左画像 */
-
-.news-image{
-
-  width:45%;
-
+/* === 特商法コンテンツ全体のレイアウト === */
+main {
+  max-width: 900px;
+  margin: 120px auto 60px; /* ヘッダーとかぶらないように上にマージンを確保 */
+  padding: 0 20px;
 }
 
-.news-image img{
-
- margin-top: 40px;
-  width:100%;
-  display:block;
-  border-radius:10px;
-
+/* === 特定商取引法 テーブルスタイル (PC用基準) === */
+.tokusho-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-/* 右文章 */
-
-.news-text{
-
-  width:55%;
-  line-height:2;
-  font-size:17px;
-
+.tokusho-table th, .tokusho-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
 }
 
-.news-text p{
-
-  margin-bottom:25px;
-
+.tokusho-table th {
+  background-color: #f9f9f9;
+  width: 25%;
+  font-weight: 600;
+  color: #444;
+  vertical-align: top;
 }
 
-/* スマホ */
-
-@media(max-width:768px){
-
-.news-content{
-
-  flex-direction:column;
-
+.tokusho-table td {
+  width: 75%;
+  color: #333;
+  line-height: 1.8;
 }
 
-.news-image,
-.news-text{
+/* === スマートフォン向けレスポンシブ (ブレイクポイント調整済) === */
+@media (max-width: 768px) {
+  main {
+    margin-top: 100px; /* スマホ時の余白微調整 */
+  }
 
-  width:100%;
+  .tokusho-table th, .tokusho-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-}
-
-.news-title{
-
-  font-size:28px;
-    margin-top: 0;
-
-}
-
-.news-text{
-
-  font-size:16px;
-
-}
-
-    .tokusho-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            background: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        .tokusho-table th, .tokusho-table td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: left;
-            font-size: 14px;
-        }
-        .tokusho-table th {
-            background-color: #f9f9f9;
-            width: 25%;
-            font-weight: 600;
-            color: #444;
-            vertical-align: top;
-        }
-        .tokusho-table td {
-            width: 75%;
-            color: #333;
-        }
-        @media (max-width: 600px) {
-            .tokusho-table th, .tokusho-table td {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            .tokusho-table th {
-                border-bottom: none;
-                background-color: #f1f1f1;
-            }
-        
-
+  .tokusho-table th {
+    border-bottom: none;
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+  }
+  
+  .tokusho-table td {
+    padding: 15px;
+  }
 }
