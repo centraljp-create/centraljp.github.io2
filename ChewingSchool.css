@@ -527,6 +527,7 @@ height: 110px;
 }
 
 .tokutei {
+  margin: 20px;
   color: #e0ffff;
   text-decoration: none;
   display: inline-block; /* 文字の範囲だけ反応 */
