@@ -9,6 +9,43 @@
 
 </head>
 <body>
+  <header class="header">
+  <a href="index.html" class="logo">
+    <img src="utasuta.png" alt="トップ">
+  </a>
+
+  <!-- ナビゲーション -->
+  <nav>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5DPDLqIGcLUMoJQqdk_Vl1Ts0i1T0DD64HjueXUsEIz_Azw/viewform?usp=header" class="contact-link">お問い合わせ</a>
+    <div class="menu-icon" id="menuIcon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- メニュー -->
+  <div class="menu" id="menu" >
+    <a href="index.html#">トップ</a>
+    <a href="index.html#NEWS">NEWS</a>
+    <a href="index.html#MOVIE">MOVIE</a>
+    <a href="index.html#依頼">依頼</a>
+    <a href="よくある質問.html">Q＆Aよくある質問</a>
+    <a href="#contact">担当者紹介</a>
+  </div>
+  
+
+
+
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const menu = document.getElementById('menu');
+
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+    </header>
 
     <h1>特定商取引法に基づく表記</h1>
 
