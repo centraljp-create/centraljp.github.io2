@@ -199,4 +199,40 @@ body{
 
 }
 
+    .tokusho-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .tokusho-table th, .tokusho-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .tokusho-table th {
+            background-color: #f9f9f9;
+            width: 25%;
+            font-weight: 600;
+            color: #444;
+            vertical-align: top;
+        }
+        .tokusho-table td {
+            width: 75%;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .tokusho-table th, .tokusho-table td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .tokusho-table th {
+                border-bottom: none;
+                background-color: #f1f1f1;
+            }
+        
+
 }
