@@ -526,9 +526,12 @@ height: 110px;
     flex-shrink:0;
 }
 
-.tokutei{
-    color: #e0ffff;
-    font-size: 10px;
+.tokutei {
+  color: #e0ffff;
+  text-decoration: none;
+  display: inline-block; /* 文字の範囲だけ反応 */
+  transition: color 0.3s ease;
 }
+
 
 </style>
